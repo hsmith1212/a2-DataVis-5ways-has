@@ -154,4 +154,5 @@ https://d3js.org/d3-scale/ordinal
 https://observablehq.com/@d3/scatterplot/2 
 https://d3js.org/d3-axis#axis_ticks 
 https://stackoverflow.com/questions/9329446/loop-for-each-over-an-array-in-javascript 
+https://learn.microsoft.com/en-us/power-bi/visuals/power-bi-visualization-scatter?tabs=powerbi-desktop#create-a-bubble-chart
 
