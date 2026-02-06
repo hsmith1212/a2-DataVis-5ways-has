@@ -1,6 +1,7 @@
 % found documentation here : https://www.mathworks.com/help/matlab/ref/readtable.html 
 data = readtable("https://raw.githubusercontent.com/hsmith1212/a2-DataVis-5ways-has/refs/heads/main/penglings.csv");
 
+
 %co pilot told me to add this line, because originally I just put species
 %as the color variable, but that didn't work because data was reading
 %species as seperate strings, not as a category column
@@ -8,7 +9,7 @@ data.species = categorical(data.species);
 
 
 
-%tyring to split instead
+% decided to split instead
 adelie = data(data.species == 'Adelie', :);
 gentoo = data(data.species == 'Gentoo', :);
 chinstrap = data(data.species == 'Chinstrap', :);
@@ -67,7 +68,7 @@ bubblesize([3,17])
 blgd = bubblelegend('bill\_length\_mm', ...
     'Location','eastoutside', ...
     'NumBubbles', 2, ...
-    'BubbleSizeOrder','ascending')
+    'BubbleSizeOrder','ascending');
 
 %color legend
 lgd = legend('Adelie','Gentoo','Chinstrap');
